@@ -1,56 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
   <meta charset="UTF-8">
   <title>FakeTwitter</title>
-    
-   
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="index.css">
 </head>
-
-
 <body>
 
-  <nav class="sidebar">
-    <i class="bi bi-twitter-x logo"></i>
+  <div class="appContainer">
 
-    <ul class="nav-list">
-      <li class="nav-item">
-        <i class="bi bi-house-door"></i>
-        <span>Home</span>
-      </li>
-      <li class="nav-item">
-        <i class="bi bi-hash"></i>
-        <span>Explore</span>
-      </li>
-      <li class="nav-item">
-        <i class="bi bi-list-ul"></i>
-        <span>Lists</span>
-      </li>
-      <li class="nav-item">
-        <i class="bi bi-person"></i>
-        <span>Profile</span>
-      </li>
-      <li class="nav-item">
-        <i class="bi bi-three-dots"></i>
-        <span>More</span>
-      </li>
-    </ul>
+    <nav class="sidebarNav">
+      <i class="bi bi-twitter-x logoIcon"></i>
 
-    <button class="tweet-btn">Tweet</button>
+      <ul class="navList">
+        <li class="navItem">
+          <i class="bi bi-house-door"></i>
+          <span>Home</span>
+        </li>
+        <li class="navItem">
+          <i class="bi bi-hash"></i>
+          <span>Explore</span>
+        </li>
+        <li class="navItem">
+          <i class="bi bi-list-ul"></i>
+          <span>Lists</span>
+        </li>
+        <li class="navItem">
+          <i class="bi bi-person"></i>
+          <span>Profile</span>
+        </li>
+        <li class="navItem">
+          <i class="bi bi-three-dots"></i>
+          <span>More</span>
+        </li>
+      </ul>
 
-    <div class="profile-actions">
-      <i class="bi bi-person-circle"></i>
-      <span>Your Name</span>
-    </div>
+      <button class="tweetButton">Tweet</button>
 
-  </nav>
+      <div class="profileActions">
+        <i class="bi bi-person-circle"></i>
+        <span>Your Name</span>
+      </div>
+    </nav>
+
+    <main class="mainContainer">
+
+      <div class="titleContainer">
+        <h2>Home</h2>
+        <i class="bi bi-stars"></i>
+      </div>
+
+      <div class="postTweet">
+        <i class="bi bi-person-circle profileIcon"></i>
+        <div class="postTweetContent">
+          <input type="text" class="tweetInput" placeholder="What is happening?!">
+          <div class="postTweetFooter">
+            <div class="postIcons">
+              <i class="bi bi-image"></i>
+              <i class="bi bi-emoji-smile"></i>
+              <i class="bi bi-calendar-event"></i>
+              <i class="bi bi-geo-alt"></i>
+            </div>
+            <button class="postButton">Post</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="tweetBox">
+        <i class="bi bi-person-circle profileIcon"></i>
+        <div class="tweetContent">
+          <div class="tweetHeader">
+            <span class="tweetName">John Doe</span>
+            <span class="tweetHandle">@johndoe · 2h</span>
+          </div>
+          <p class="tweetText">ZAIO is where innovation meets reality .</p>
+          <div class="tweetActions">
+            <span><i class="bi bi-chat"></i> 12</span>
+            <span><i class="bi bi-repeat"></i> 4</span>
+            <span><i class="bi bi-heart"></i> 56</span>
+            <span><i class="bi bi-upload"></i></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tweetBox">
+        <i class="bi bi-person-circle profileIcon"></i>
+        <div class="tweetContent">
+          <div class="tweetHeader">
+            <span class="tweetName">Sarah Connor</span>
+            <span class="tweetHandle">@sarahc · 4h</span>
+          </div>
+          <p class="tweetText"> My tutor likes animes too much! Haaa guys(Hahaha)</p>
+          <div class="tweetActions">
+            <span><i class="bi bi-chat"></i> 8</span>
+            <span><i class="bi bi-repeat"></i> 2</span>
+            <span><i class="bi bi-heart"></i> 34</span>
+            <span><i class="bi bi-upload"></i></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tweetBox">
+        <i class="bi bi-person-circle profileIcon"></i>
+        <div class="tweetContent">
+          <div class="tweetHeader">
+            <span class="tweetName">Mike Ndlovu</span>
+            <span class="tweetHandle">@mikendlovu · 5h</span>
+          </div>
+          <p class="tweetText">Spent hours trying to debug my react application today, just to find out it was becuase i didnt save a file after coding, Yoohhhh So frustrating!</p>
+          <div class="tweetActions">
+            <span><i class="bi bi-chat"></i> 45</span>
+            <span><i class="bi bi-repeat"></i> 21</span>
+            <span><i class="bi bi-heart"></i> 210</span>
+            <span><i class="bi bi-upload"></i></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tweetBox">
+        <i class="bi bi-person-circle profileIcon"></i>
+        <div class="tweetContent">
+          <div class="tweetHeader">
+            <span class="tweetName">Thandi M.</span>
+            <span class="tweetHandle">@thandim · 7h</span>
+          </div>
+          <p class="tweetText">"March March!" more like discrimination, forcing our brothers and sisters to leave wont create more jobs</p>
+          <div class="tweetActions">
+            <span><i class="bi bi-chat"></i> 3</span>
+            <span><i class="bi bi-repeat"></i> 1</span>
+            <span><i class="bi bi-heart"></i> 19</span>
+            <span><i class="bi bi-upload"></i></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tweetBox">
+        <i class="bi bi-person-circle profileIcon"></i>
+        <div class="tweetContent">
+          <div class="tweetHeader">
+            <span class="tweetName">Kabelo Sithole</span>
+            <span class="tweetHandle">@kabelos · 9h</span>
+          </div>
+          <p class="tweetText">South africa vs Canada  this weekend, who else is watching?</p>
+          <div class="tweetActions">
+            <span><i class="bi bi-chat"></i> 67</span>
+            <span><i class="bi bi-repeat"></i> 34</span>
+            <span><i class="bi bi-heart"></i> 412</span>
+            <span><i class="bi bi-upload"></i></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tweetBox">
+        <i class="bi bi-person-circle profileIcon"></i>
+        <div class="tweetContent">
+          <div class="tweetHeader">
+            <span class="tweetName">Lerato Dube</span>
+            <span class="tweetHandle">@leratod · 11h</span>
+          </div>
+          <p class="tweetText">Reminder that "it works on my PC" is not a valid deployment strategy.</p>
+          <div class="tweetActions">
+            <span><i class="bi bi-chat"></i> 120</span>
+            <span><i class="bi bi-repeat"></i> 89</span>
+            <span><i class="bi bi-heart"></i> 1.1K</span>
+            <span><i class="bi bi-upload"></i></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tweetBox">
+        <i class="bi bi-person-circle profileIcon"></i>
+        <div class="tweetContent">
+          <div class="tweetHeader">
+            <span class="tweetName">Peter van Wyk</span>
+            <span class="tweetHandle">@petervw · 13h</span>
+          </div>
+          <p class="tweetText">Loadshedding stage 4 tonight. My laptop battery has become my most valuable possession.
+            </p>
+          <div class="tweetActions">
+            <span><i class="bi bi-chat"></i> 56</span>
+            <span><i class="bi bi-repeat"></i> 12</span>
+            <span><i class="bi bi-heart"></i> 340</span>
+            <span><i class="bi bi-upload"></i></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tweetBox">
+        <i class="bi bi-person-circle profileIcon"></i>
+        <div class="tweetContent">
+          <div class="tweetHeader">
+            <span class="tweetName">Naledi Khumalo</span>
+            <span class="tweetHandle">@naledik · 15h</span>
+          </div>
+          <p class="tweetText">Spent 3 hours debugging only to find out I forgot a semicolon. Classic.</p>
+          <div class="tweetActions">
+            <span><i class="bi bi-chat"></i> 22</span>
+            <span><i class="bi bi-repeat"></i> 9</span>
+            <span><i class="bi bi-heart"></i> 178</span>
+            <span><i class="bi bi-upload"></i></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tweetBox">
+        <i class="bi bi-person-circle profileIcon"></i>
+        <div class="tweetContent">
+          <div class="tweetHeader">
+            <span class="tweetName">Dylan Pretorius</span>
+            <span class="tweetHandle">@dylanp · 17h</span>
+          </div>
+          <p class="tweetText">I need a job yohhh NO, im tired or washing dishes and cleaning my momthers house everyday</p>
+          <div class="tweetActions">
+            <span><i class="bi bi-chat"></i> 31</span>
+            <span><i class="bi bi-repeat"></i> 18</span>
+            <span><i class="bi bi-heart"></i> 267</span>
+            <span><i class="bi bi-upload"></i></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tweetBox">
+        <i class="bi bi-person-circle profileIcon"></i>
+        <div class="tweetContent">
+          <div class="tweetHeader">
+            <span class="tweetName">Zanele Mokoena</span>
+            <span class="tweetHandle">@zanelem · 19h</span>
+          </div>
+          <p class="tweetText">Winter in Joburg hits different when your geyser decides to give up at 6am.</p>
+          <div class="tweetActions">
+            <span><i class="bi bi-chat"></i> 14</span>
+            <span><i class="bi bi-repeat"></i> 3</span>
+            <span><i class="bi bi-heart"></i> 98</span>
+            <span><i class="bi bi-upload"></i></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tweetBox">
+        <i class="bi bi-person-circle profileIcon"></i>
+        <div class="tweetContent">
+          <div class="tweetHeader">
+            <span class="tweetName">Sipho Zulu</span>
+            <span class="tweetHandle">@siphoz · 21h</span>
+          </div>
+          <p class="tweetText">I Cant wait for the capstone project and pass my bootcamp, and get job interviews (wish me luck guys)  </p>
+          <div class="tweetActions">
+            <span><i class="bi bi-chat"></i> 9</span>
+            <span><i class="bi bi-repeat"></i> 4</span>
+            <span><i class="bi bi-heart"></i> 76</span>
+            <span><i class="bi bi-upload"></i></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tweetBox">
+        <i class="bi bi-person-circle profileIcon"></i>
+        <div class="tweetContent">
+          <div class="tweetHeader">
+            <span class="tweetName">Amanda Botha</span>
+            <span class="tweetHandle">@amandab · 23h</span>
+          </div>
+          <p class="tweetText">Cape Town traffic on the N1 this morning was a very frustrating experience.</p>
+          <div class="tweetActions">
+            <span><i class="bi bi-chat"></i> 40</span>
+            <span><i class="bi bi-repeat"></i> 15</span>
+            <span><i class="bi bi-heart"></i> 305</span>
+            <span><i class="bi bi-upload"></i></span>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <aside class="trendingContainer">
+      <div class="searchBox">
+        <i class="bi bi-search"></i>
+        <input type="text" placeholder="Search">
+      </div>
+
+      <div class="trendingBox">
+        <h3>What's happening</h3>
+        <div class="trendItem">
+          <span class="trendCategory">Trending in South Africa</span>
+          <span class="trendName">#March March</span>
+          <span class="trendCount">45.2K posts</span>
+        </div>
+        <div class="trendItem">
+          <span class="trendCategory">Sports · Trending</span>
+          <span class="trendName">#Bafana Bafana</span>
+          <span class="trendCount">28.1K posts</span>
+        </div>
+        <div class="trendItem">
+          <span class="trendCategory">Trending</span>
+          <span class="trendName">#WebDev</span>
+          <span class="trendCount">12.4K posts</span>
+        </div>
+      </div>
+
+      <div class="whoToFollow">
+        <h3>Who to follow</h3>
+        <div class="followItem">
+          <i class="bi bi-person-circle profileIcon"></i>
+          <div class="followInfo">
+            <span class="followName">Jane Smith</span>
+            <span class="followHandle">@janesmith</span>
+          </div>
+          <button class="followButton">Follow</button>
+        </div>
+        <div class="followItem">
+          <i class="bi bi-person-circle profileIcon"></i>
+          <div class="followInfo">
+            <span class="followName">Mike Ndlovu</span>
+            <span class="followHandle">@mikendlovu</span>
+          </div>
+          <button class="followButton">Follow</button>
+        </div>
+        <div class="followItem">
+          <i class="bi bi-person-circle profileIcon"></i>
+          <div class="followInfo">
+            <span class="followName">Kabelo Sithole</span>
+            <span class="followHandle">@kabelos</span>
+          </div>
+          <button class="followButton">Follow</button>
+        </div>
+        <span class="showMore">Show more</span>
+      </div>
+    </aside>
+
+  </div>
 
 </body>
-
-
-
 </html>
