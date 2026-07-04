@@ -11,4 +11,4 @@ A responsive Twitter Home Page clone built with **HTML, CSS, and Bootstrap Icons
 - **Compose Tweet popup (Cursor-built)** - clicking the Tweet button opens a modal with a larger textarea, character counter, and Post button, closable via X, outside click, or Escape key.
 - **Explore page (Cursor-built)** -  a second page with a search bar and trending content, reachable from the sidebar.
 
-Overall, this project is just my Full Stack bootcamp assignment which is just a clone of Twitter's home pasge experience end-to-end: layout, styling, responsiveness(mobile optimization), and one interactive JS-driven feature, split clearly between hand-coded work and AI-assisted (Cursor) work.
+Overall, this project is just my Full Stack bootcamp assignment which is just a clone of Twitter's home pasge experience end-to-end: layout, styling, responsiveness(mobile optimization), and one interactive JS-driven feature, split clearly between hand-coded work and AI-assisted work.
